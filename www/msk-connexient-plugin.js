@@ -16,36 +16,36 @@ module.exports = {
     initAsync: function (apiKey, success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'initAsync', [apiKey]);
     },
-    loadMap: function (mapId, success, error) {
-        if (mapId === undefined){
-            exec(success, error, 'MSKConnexientPlugin', 'loadMapNoId');
-        } else {
-            exec(success, error, 'MSKConnexientPlugin', 'loadMap', [mapId]);
-        }
-    },
-    isMapDownloading: function (mapId, success, error) {
-        if (mapId === undefined){
-            exec(success, error, 'MSKConnexientPlugin', 'isMapDownloadingNoId');
-        } else {
-            exec(success, error, 'MSKConnexientPlugin', 'isMapDownloading', [mapId]);
-        }
-    },
-    isMapReady: function (mapId, success, error) {
-        if (mapId === undefined){
-            exec(success, error, 'MSKConnexientPluginNoId', 'isMapReady');
-        } else {
-            exec(success, error, 'MSKConnexientPlugin', 'isMapReady', [mapId]);
-        }
-    },
-    searchStaff: function (success, error) {
-        exec(success, error, 'MSKConnexientPlugin', 'searchStaff');
-    },
+//     loadMap: function (mapId, success, error) {
+//         if (mapId === undefined){
+//             exec(success, error, 'MSKConnexientPlugin', 'loadMapNoId');
+//         } else {
+//             exec(success, error, 'MSKConnexientPlugin', 'loadMap', [mapId]);
+//         }
+//     },
+//     isMapDownloading: function (mapId, success, error) {
+//         if (mapId === undefined){
+//             exec(success, error, 'MSKConnexientPlugin', 'isMapDownloadingNoId');
+//         } else {
+//             exec(success, error, 'MSKConnexientPlugin', 'isMapDownloading', [mapId]);
+//         }
+//     },
+//     isMapReady: function (mapId, success, error) {
+//         if (mapId === undefined){
+//             exec(success, error, 'MSKConnexientPluginNoId', 'isMapReady');
+//         } else {
+//             exec(success, error, 'MSKConnexientPlugin', 'isMapReady', [mapId]);
+//         }
+//     },
+//     searchStaff: function (success, error) {
+//         exec(success, error, 'MSKConnexientPlugin', 'searchStaff');
+//     },
     showMap: function (success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'showMap');
     },
-    showDirectory: function (success, error) {
-        exec(success, error, 'MSKConnexientPlugin', 'showDirectory');
-    },
+//     showDirectory: function (success, error) {
+//         exec(success, error, 'MSKConnexientPlugin', 'showDirectory');
+//     },
     openLink: function (deepLink, success, error) {
         exec(success, error, 'MSKConnexientPlugin', 'openLink', [deepLink]);
     }
